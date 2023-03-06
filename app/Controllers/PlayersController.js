@@ -1,5 +1,6 @@
 import { appState } from "../AppState.js";
 import { player } from "../Models/Player.js";
+import { playersService } from "../Services/PlayersService.js";
 
 
 export class PlayersController {
@@ -22,8 +23,8 @@ export class PlayersController {
   }
 
   minusScore(name) {
-    playersService.minusScore(name)
     console.log('after service score-minus')
+    playersService.minusScore(name)
     this.drawPlayers()
   }
 }
