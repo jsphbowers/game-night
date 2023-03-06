@@ -5,13 +5,13 @@ import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
 
 class AppState extends EventEmitter {
-  /** @type {import('./Models/Value').Value[]} */
-  values = loadState('values', [Value])
+  // /** @type {import('./Models/Value').Value[]} */
+  // values = loadState('values', [Value])
 
 
   players = [
-    new player('Joe', 10, 'winning'),
-    new player('Megan', 2, 'losing'),
+    new player('Joe'),
+    new player('Megan'),
   ];
 
 }

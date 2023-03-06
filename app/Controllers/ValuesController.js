@@ -19,6 +19,7 @@ function _draw() {
   `)
 }
 
+
 //Public
 export class ValuesController {
   constructor() {
@@ -39,7 +40,7 @@ export class ValuesController {
       valuesService.removeValue(id)
     }
   }
-  
+
   async clearAll() {
     const yes = await Pop.confirm('Remove All Rolls?')
     if (yes) {
